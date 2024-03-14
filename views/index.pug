@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  h1 #{title}
+  p ¡Bienvenido a OebelsStore! 
+  p En OebelsStore, nos enorgullece ofrecerte una amplia gama de productos de alta calidad que seguramente satisfarán tus necesidades y gustos. 
+  p Nuestro equipo se esfuerza por brindarte una experiencia de compra excepcional. Estamos comprometidos con la calidad, la atención al cliente y la satisfacción del cliente.
+  p Explora nuestra selección de productos cuidadosamente seleccionados y encuentra justo lo que necesitas.
+  p Gracias por elegir OebelsStore. ¡Esperamos que disfrutes de tu experiencia de compra con nosotros!
+  form(action='/buscar-producto', method='GET' class='search-bar')
+    input(type='text', name='q', placeholder='Buscar producto...')
+    button(type='submit') Buscar
